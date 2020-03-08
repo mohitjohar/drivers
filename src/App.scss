@@ -1,0 +1,136 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+  line-height: normal;
+  color: $textColor;
+}
+
+h2,
+.h2 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+h3,
+.h3 {
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.btn {
+  padding: 12px 21px;
+  font-size: 16px;
+  box-shadow: 2px 4px 9px 3px #87878761;
+  font-weight: 500;
+}
+
+.btn-primary {
+  border-color: $primaryColor !important;
+  background-color: $primaryColor !important;
+  &:hover {
+    border-color: $primaryColorH !important;
+    background-color: $primaryColorH !important;
+  }
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.logo-box {
+  padding: 15px;
+  background-color: #f7f7f7;
+  > img {
+    height: 50px;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+.logosRow {
+  margin: 0 -10px;
+  > div {
+    padding: 10px;
+  }
+}
+
+.max-350 {
+  max-width: 350px;
+  margin: auto;
+}
+
+.bg-light {
+  background-color: #f0f0f0 !important;
+}
+
+.heightH-100 {
+  min-height: calc(100vh - 56px);
+}
+
+.height-100 {
+  min-height: 100vh;
+}
+
+.main-height .nav-link {
+  font-weight: 500;
+}
+label {
+  font-weight: 600;
+}
+.form-control {
+  padding: 16px 20px;
+  font-weight: 400;
+  border: 1px solid #0000002e;
+  font-size: 14px;
+  height: auto;
+  line-height: normal;
+}
+
+.font-weight-medium {
+  font-weight: 500 !important;
+}
+
+.wrapper {
+  background-color: #ffff;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 75px;
+  box-shadow: 0 0 8px 3px #9391911c;
+  padding: 30px 30px 70px 30px;
+  border-radius: 6px;
+  img.wrapperperson {
+    display: block;
+    margin: auto;
+    margin-top: -76px;
+    margin-bottom: 15px;
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+  }
+}
+
+.feature-list {
+  margin: auto;
+  max-width: 350px;
+  .feature-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 26px;
+    .icon {
+      padding: 20px;
+      width: 79px;
+      border-radius: 50%;
+      background-color: white;
+      margin-right: 18px;
+      box-shadow: 0 0 10px 3px #a0a0a036;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+  }
+}
