@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.scss';
-import Study from './container/study/Study';
 
 const Home = React.lazy(() => import('./container/home'));
 const RegisterOne = React.lazy(() =>
@@ -13,6 +12,10 @@ const RegisterTwo = React.lazy(() =>
 );
 const AddInsurance = React.lazy(() =>
   import('./container/addinsurance/AddInsurance')
+);
+
+const Matrix = React.lazy(() =>
+  import('./container/Matrix')
 );
 
 const loading = () => (
@@ -32,9 +35,9 @@ function App() {
           />
           <Route
             exact
-            path="/study"
-            name="Study"
-            render={props => <Study {...props} />}
+            path="/matrix"
+            name="matrix"
+            render={props => <Matrix {...props} />}
           />
           <Route
             exact

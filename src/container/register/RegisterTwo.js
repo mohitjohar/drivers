@@ -76,13 +76,13 @@ const RegisterTwo = () => {
             </Col>
           </Row>
         ) : (
-          ''
-        )}
+            ''
+          )}
 
         <Row>
           <Col md={12}>
             <div className="font-weight-medium cursor" onClick={toggle}>
-              + Additional Drivers
+              {isOpen ? "-" : "+"} Additional Drivers
             </div>
           </Col>
           <Col md={12}>
