@@ -9,6 +9,7 @@ import {
   NavItem,
   NavLink
 } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,8 @@ const Header = () => {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/matrix">Matrix</NavLink>
+
+                <Link to="/matrix"><NavLink>Matrix</NavLink></Link>
               </NavItem>
               <NavItem>
                 <NavLink href="/support">Support</NavLink>
