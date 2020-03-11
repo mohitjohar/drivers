@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.scss';
+import Study from './container/study/Study';
 
 const Home = React.lazy(() => import('./container/home'));
 const RegisterOne = React.lazy(() =>
@@ -28,6 +29,12 @@ function App() {
             path="/"
             name="Home"
             render={props => <Home {...props} />}
+          />
+          <Route
+            exact
+            path="/study"
+            name="Study"
+            render={props => <Study {...props} />}
           />
           <Route
             exact
