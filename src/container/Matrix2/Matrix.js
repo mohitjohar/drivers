@@ -13,7 +13,7 @@ const Matrix2 = () => {
     setArray(updatedArray);
   };
 
-  // Array
+  // Arrays
   const [arr, setArr] = useState([]);
   const [arr2, setArr2] = useState([]);
 
